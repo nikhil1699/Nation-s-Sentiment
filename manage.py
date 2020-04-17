@@ -3,7 +3,7 @@ from tweet_store import TweetStore
 
 app = Flask(__name__)
 store = TweetStore()
-
+#Home Route
 @app.route('/')
 def index():
     tweets = store.tweets()
